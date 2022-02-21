@@ -19,6 +19,7 @@ public class FizzBuzzer
         }
         if (number % 11 == 0) 
         {
+            output.Clear();
             output.Add("Bong");
         }
         if (number % 13 == 0) 
