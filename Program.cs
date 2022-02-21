@@ -6,7 +6,11 @@ namespace FizzBuzz
     {
         static void Main(string [] args)
         {
-            Console.WriteLine("Hello C#");
+            var FizzBuzzer = new FizzBuzzer();
+            for (int i = 1; i <= 300; i++)
+            {
+                Console.WriteLine(FizzBuzzer.FizzBuzz(i));
+            }
         }
     }
 }
