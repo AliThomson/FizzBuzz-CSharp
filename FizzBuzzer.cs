@@ -13,29 +13,6 @@ public class FizzBuzzer
         {
             output = rule.Apply(output, number);
         }
-
-        
-        // if (number % 11 == 0) 
-        // {
-        //     output.Clear();
-        //     output.Add("Bong");
-        // }
-        // if (number % 13 == 0) 
-        // {
-        //     bool fizzExists = output.Exists(element => element == "Fizz");
-        //     if (fizzExists)
-        //     {
-        //         output.Insert(1, "Fezz");
-        //     }       
-        //     else 
-        //     {
-        //         output.Insert(0, "Fezz"); 
-        //     }   
-        // }
-        // if (number % 17 == 0) 
-        // {
-        //     output.Reverse();
-        // }
         if (output.Count == 0)
         {
             output.Add(number.ToString());
