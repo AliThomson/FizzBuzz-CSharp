@@ -8,20 +8,19 @@ namespace FizzBuzz
     {
         static void Main(string [] args)
         {
-            
             var rules = new List<IRules>()
             {
-                new DivisableRule(3, "Fizz"),
-                new DivisableRule(5, "Buzz"),
-                new DivisableRule(7, "Bang"),
+                new DivisibleRule(3, "Fizz"),
+                new DivisibleRule(5, "Buzz"),
+                new DivisibleRule(7, "Bang"),
                 new OverwriteRule(11, "Bong"),
                 new ComplexDivRule(13, "Fezz"),
                 new ReverseRule(17),
             };
-            var FizzBuzzer = new FizzBuzzer(rules);
+            var fizzBuzzer = new FizzBuzzer(rules);
             for (int i = 1; i <= 300; i++)
             {
-                Console.WriteLine(FizzBuzzer.FizzBuzz(i));
+                Console.WriteLine(fizzBuzzer.FizzBuzz(i));
             }
         }
     }

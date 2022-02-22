@@ -1,10 +1,10 @@
 namespace FizzBuzz.Rules
 {
-    public class DivisableRule : IRules
+    public class DivisibleRule : IRules
     {
         public int Divisor { get; set; }
         public string ToAdd { get; set; }
-        public DivisableRule(int divisor, string toAdd )
+        public DivisibleRule(int divisor, string toAdd )
         {
             Divisor = divisor;
             ToAdd = toAdd;
